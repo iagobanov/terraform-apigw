@@ -1,5 +1,5 @@
 variable "api_gateway_key_name" {
-  default = "salesforce"
+  default = "sample-key"
 }
 
 variable "stage_name" {

@@ -2,16 +2,6 @@ provider "aws" {
   region = "${module.environment.aws_region}"
 }
 
-//The key is like this because we alter with SED in the Jenkins Pipeline
-terraform {
-  backend "s3" {
-    region  = "us-east-1"
-    bucket  = "pi-tfstates"
-    key     = "API-GW/pi-api-gw.tfstate"
-    encrypt = true
-  }
-}
-
 module "environment" {
   source = "../"
 }

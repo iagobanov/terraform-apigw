@@ -1,6 +1,6 @@
 variable "path_part" {
   description = "Name of your API GW Resource"
-  default     = "carteira"
+  default     = "sample-resource"
 }
 
 variable "http_method" {
@@ -9,7 +9,7 @@ variable "http_method" {
 }
 
 variable "api_path" {
-  default = "carteira"
+  default = "sample-resource"
 }
 
 variable "lambda_name" {
@@ -23,7 +23,7 @@ variable "type" {
 }
 
 variable "endpoint" {
-  default = "https://ecs-balancer-integracao.soupi.com.br/carteira/{proxy}"
+  default = "https://my_endpoint.com"
 }
 
 variable "api_key_required" {
