@@ -6,8 +6,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     region  = "us-east-1"
-    bucket  = "pi-tfstates"
-    key     = "API-GW/RESOURCES/carteira-resources.tfstate"
+    bucket  = ""
+    key     = "resources.tfstate"
     encrypt = true
   }
 }
@@ -216,7 +216,7 @@ module "aws_api_gateway_method_quecarccocontacorrente" {
 }
 
 
-##### SQS quecaromslimiteoperacional #####
+##### SQS  #####
 
 
 module "aws_api_gateway_resource_quecaromslimiteoperacional" {
