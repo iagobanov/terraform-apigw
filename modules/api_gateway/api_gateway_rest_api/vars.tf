@@ -1,13 +1,15 @@
 variable "api_name" {
-  default = "ApiSouPi"
+  default = ""
 }
 
 variable "zone_id" {
-  default = "Z076515519FHBUIDDE4M0"
+  default = ""
 }
 
 variable "api_domain_name" {
-  default = "apisoupi"
+  default = ""
 }
 
-variable "stage_name" {}
+variable "stage_name" {
+  default = ""
+}
